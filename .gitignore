@@ -1,0 +1,7 @@
+# FILES
+package-lock.json
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+

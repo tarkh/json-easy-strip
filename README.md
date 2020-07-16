@@ -1,2 +1,2 @@
 # json-easy-strip
-Strip JSON from JS-type comments, easy and fast
+Strip JS-type comments from JSON, easy and fast!

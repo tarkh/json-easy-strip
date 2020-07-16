@@ -1,0 +1,33 @@
+{
+  "name": "json-easy-strip",
+  "version": "1.0.1",
+  "description": "Strip JS-type comments from JSON, easy and fast!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarkh/json-easy-strip.git"
+  },
+  "keywords": [
+    "json",
+    "remove",
+    "comments",
+    "easy",
+    "fast",
+    "parse",
+    "config",
+    "configuration",
+    "settings",
+    "strip",
+    "delete",
+    "filter"
+  ],
+  "author": "tarkh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarkh/json-easy-strip/issues"
+  },
+  "homepage": "https://github.com/tarkh/json-easy-strip#readme"
+}
