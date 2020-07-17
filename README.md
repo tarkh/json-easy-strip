@@ -32,7 +32,7 @@ console.log(obj);
 
 //  {
 //    fruit: 'Watermelon',
-//    desert: 'Cheesecake',
+//    dessert: 'Cheesecake',
 //    drink: 'Milkshake - /* strawberry */ or // chocolate!'
 //  }
 
