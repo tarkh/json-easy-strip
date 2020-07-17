@@ -1,5 +1,5 @@
 # json-easy-strip
-Load and strip JS-type comments from JSON file, easy and fast!
+> Load and strip JS-type comments from JSON file, easy and fast!
 
 - Works with all JS-type comments
 - Super easy and fast
@@ -12,7 +12,7 @@ $ npm install json-easy-strip
 
 ## Usage
 #### sweet.json:
-```JavaScript
+```js
 {
 	/*
 	 * Sweet section
@@ -25,7 +25,7 @@ $ npm install json-easy-strip
 ```
 
 #### index.js:
-```JavaScript
+```js
 const requireJSON = require('json-easy-strip');
 const obj = requireJSON('./sweet.json');
 console.log(obj);
