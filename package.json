@@ -1,7 +1,7 @@
 {
   "name": "json-easy-strip",
   "version": "1.0.1",
-  "description": "Strip JS-type comments from JSON, easy and fast!",
+  "description": "Load and strip JS-type comments from JSON file, easy and fast!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

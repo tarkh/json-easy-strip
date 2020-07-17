@@ -47,8 +47,3 @@ Path to JSON file.
 #### return
 Type: `object`  
 The function returns a parsed object, as the standard require() function does.
-
-## Benchmark
-```
-$ npm run bench
-```
