@@ -18,7 +18,7 @@ $ npm install json-easy-strip
 	 * Sweet section
 	 */
 	"fruit": "Watermelon", // Yes, watermelons is sweet!
-	"desert": /* Yummy! */ "Cheesecake",
+	"dessert": /* Yummy! */ "Cheesecake",
 	// And finally
 	"drink": "Milkshake - /* strawberry */ or // chocolate!" // Mmm...
 }
