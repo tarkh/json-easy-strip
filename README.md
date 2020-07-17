@@ -39,7 +39,7 @@ console.log(obj);
 ```
 
 ## API
-function(path)
+requireJSON(path)
 #### path
 Type: `string`  
 Path to JSON file.
