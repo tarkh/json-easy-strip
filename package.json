@@ -1,6 +1,6 @@
 {
   "name": "json-easy-strip",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Load and strip JS-type comments from JSON file, easy and fast!",
   "license": "MIT",
   "author": {
@@ -27,7 +27,6 @@
     "delete",
     "filter"
   ],
-
   "bugs": {
     "url": "https://github.com/tarkh/json-easy-strip/issues"
   },
