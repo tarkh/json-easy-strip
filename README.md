@@ -7,7 +7,7 @@ Load and strip JS-type comments from JSON file, easy and fast!
 
 ## Install
 ```
-$ npm install strip-json-comments
+$ npm install json-easy-strip
 ```
 
 ## Usage
