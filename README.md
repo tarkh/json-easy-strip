@@ -105,5 +105,5 @@ Type: `object`
 The function returns a parsed JSON object.
 
 ### requireJSON.cache
-Type: `object`
+Type: `object`  
 Contains cached data as key (file path) => value (JSON object).
