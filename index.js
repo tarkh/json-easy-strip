@@ -11,35 +11,34 @@
 const fs = require('fs');
 const path = require('path');
 
-module.exports = file => {
-    /*
-     * Try to load and strip JSON file
-     */
-    try {
-        /*
-         * Resolve file path
-         */
-        const pathResolved = path.resolve(file);
+module.exports = (() => {
+    // Main obj loader function
+    const main = file => {
+        // Set path resolved string
+        const pr = path.resolve(file);
 
-        /*
-         * Read file and convert buffer to string data
-         */
-        const data = (fs.readFileSync(pathResolved)).toString();
+        // Check for cache
+        if(main.cache[pr]) return main.cache[pr];
 
-        /*
-         * Strip all JS-style comments from data
-         * with intelligent one-liner
-         */
-        const stripedData = data.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (m, g) => g ? "" : m);
+        // Read file and convert buffer to string data
+        const d = (fs.readFileSync(pr)).toString();
 
-        /*
-         * Parse string to JSON object and return
-         */
-        return JSON.parse(stripedData);
-    } catch(err) {
-        /*
-         * If anything goes wrong - throw error
-         */
-        throw new Error(err);
-    }
-}
+        // Strip data
+        const json = main.strip(d);
+
+        // Set cache
+        main.cache[pr] = json;
+
+        // Return striped and parsed data
+        return main.cache[pr];
+    };
+
+    // Extend main with data striper
+    main.strip = data => JSON.parse(data.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (m, g) => g ? "" : m));
+
+    // Extend main with cache obj
+    main.cache = {};
+
+    // Return main obj
+    return main;
+})();
