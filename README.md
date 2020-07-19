@@ -60,7 +60,7 @@ delete requireJSON.cache[path.resolve('./sweet.json')];
 const obj3 = requireJSON('./sweet.json');
 
 ```
-#### Accsess to strip method only
+#### Access to strip method only
 If you don't need to load file, only strip method is avaliable
 ```js
 const requireJSON = require('json-easy-strip');
